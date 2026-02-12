@@ -438,7 +438,7 @@ color: rgb(97, 4, 4);
 
 .review-text {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.6;
     max-width: 420px;
     margin-inline: auto;
@@ -577,4 +577,5 @@ color: rgb(97, 4, 4);
     h2{
         font-size: 3rem;
     }
+
 
