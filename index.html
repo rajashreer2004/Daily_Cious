@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily_Cious – Food Delivery</title>
+    <meta name="description" content="Daily_Cious – Fast and fresh food delivery service">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video class="site-bg-video" autoplay muted loop playsinline>
+    <source src="video/video7.mp4" type="video/mp4">
+</video>
+
+    <!--Header Part-->
+    <header>
+        <nav class="navbar flex between ">
+            <a href="#" class="logo">Daily_Cious</a>
+
+            <!--DESKTOP MENU-->
+            <ul class="navlist flex gap-3">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+
+            </ul>
+
+            <div class="desktop-action flex gap-2">
+                <div class="cart-wrapper">
+                    <button class="cart-icon-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-value">0</span>
+                    </button>
+
+                    <div class="cart-panel">
+                        <h3>Your Cart</h3>
+
+                        <ul class="cart-items"></ul>
+
+                        <div class="cart-summary">
+                            <p>Total Items: <span class="total-items">0</span></p>
+                            <p>Total Price: ₹<span class="total-price">0</span></p>
+                        </div>
+
+                        <button class="btn checkout-btn">Checkout</button>
+                    </div>
+                </div>
+
+                <a href="login.html" class="btn">
+                    Sign In
+
+                    &NonBreakingSpace;
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+                <button class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+
+            </div>
+        </nav>
+        <!--MOBILE MENU-->
+        <div class="mobile-menu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#menu" class="mobile-link">Menu</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="login.html" class="mobile-link">Login</a>
+
+
+            <a href="login.html" class="btn">Sign In <i class="fa-solid fa-right-to-bracket"></i></a>
+        </div>
+
+
+    </header>
+    <!--Sections Part-->
+    <main>
+        <section id="home">
+
+            <div class="hero-section flex wrapper gap-4">
+                
+                <div class="content">
+                    <h1>
+                        Good Mood comes from Good <span><b>Food</b></span>
+                    </h1>
+                    <p class="para">
+                        Hungry? Let us fix that.<br>
+                        Your favorites delivered in minutes.
+                    </p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn">Order</a>
+
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-google"></i>
+
+                        </a>
+
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="images/Picture1.png" alt="Hero food image">
+                </div>
+            </div>
+        </section>
+
+        </section>
+        <section id="services">
+            <div class="wrapper p-top">
+
+
+                <div class="text-center">
+                    <h5>Our Services</h5>
+                    <h2>How does it work?</h2>
+                </div>
+                <div class=" services-container flex gap-3">
+                    <div class="service-card">
+                        <div class="images-container">
+                            <img src="images/Picture8.png">
+                        </div>
+                        <h3>
+                            Easy to Order
+                        </h3>
+                        <h4>
+                            You only need a few steps in ordering food.
+                        </h4>
+                    </div>
+                    <div class="service-card">
+                        <div class="images-container">
+                            <img src="images/Picture7.png">
+                        </div>
+                        <h3>
+                            Fast Delivery
+                        </h3>
+                        <h4>Delivery that is always on time.</h4>
+
+                    </div>
+                    <div class="service-card">
+                        <div class="images-container">
+                            <img src="images/Picture6.png">
+                        </div>
+                        <h3>
+                            Best Quality
+                        </h3>
+                        <h4>
+                            Not only fast for us in quality is also number one.</h4>
+                    </div>
+
+                </div>
+        </section>
+        <section id="menu">
+
+
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h5>
+                        Our Menu
+                    </h5>
+                    <h2>
+                        The Most Popular
+                    </h2>
+                </div>
+            </div>
+
+            <div class="card-list text-center flex mt-4 gap-3">
+
+                <!-- Chicken Burger -->
+                <div class="order-card">
+                    <div class="card-image">
+                        <img src="images/burger-png-transparent-images-download-clip-art-30.png">
+                    </div>
+                    <h4>Chicken Burger</h4>
+                    <h4 class="price">₹ 249</h4>
+
+                    <button class="btn add-to-cart" data-name="Chicken Burger" data-price="249">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Fried Chicken -->
+                <div class="order-card">
+                    <div class="card-image">
+                        <img src="images/Picture9.png">
+                    </div>
+                    <h4>Fried Chicken</h4>
+                    <h4 class="price">₹ 399</h4>
+
+                    <button class="btn add-to-cart" data-name="Fried Chicken" data-price="399">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Mix Chowmein -->
+                <div class="order-card">
+                    <div class="card-image">
+                        <img src="images/authentic-chow-mein-clipart-for-traditional-chinese-recipes-free-png.webp">
+                    </div>
+                    <h4>Mix Chowmein</h4>
+                    <h4 class="price">₹ 249</h4>
+
+                    <button class="btn add-to-cart" data-name="Mix Chowmein" data-price="249">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Masala Dosa -->
+                <div class="order-card">
+                    <div class="card-image">
+                        <img
+                            src="images/pngtree-masala-dosa-with-chutneys-appealing-south-indian-breakfast-png-image_16032369.png">
+                    </div>
+                    <h4>Masala Dosa</h4>
+                    <h4 class="price">₹ 149</h4>
+
+                    <button class="btn add-to-cart" data-name="Masala Dosa" data-price="149">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Butter Naan -->
+                <div class="order-card">
+                    <div class="card-image">
+                        <img src="images/Picture10.png">
+                    </div>
+                    <h4>Butter Naan</h4>
+                    <h4 class="price">₹ 320</h4>
+
+                    <button class="btn add-to-cart" data-name="Butter Naan" data-price="320">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Chicken Biriyani -->
+                <div class="order-card">
+                    <div class="card-image">
+                        <img
+                            src="images/pngtree-large-bowl-of-chicken-biryani-garnished-with-fresh-herbs-png-image_16110280.png">
+                    </div>
+                    <h4>Chicken Biriyani</h4>
+                    <h4 class="price">₹ 249</h4>
+
+                    <button class="btn add-to-cart" data-name="Chicken Biriyani" data-price="249">
+                        Add to Cart
+                    </button>
+                </div>
+                <!--MUTTON kOSHA-->
+                <div class="order-card">
+                    <div class="card-image">
+                        <img
+                            src="images/mutton.png">
+                    </div>
+                    <h4>Mutton Kosha</h4>
+                    <h4 class="price">₹ 399</h4>
+
+                    <button class="btn add-to-cart" data-name="Chicken Biriyani" data-price="249">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Paneer Butter Masala -->
+                <div class="order-card">
+                    <div class="card-image">
+                        <img src="images/paneer.png">
+                    </div>
+                    <h4>Paneer Butter Masala</h4>
+                    <h4 class="price">₹ 420</h4>
+
+                    <button class="btn add-to-cart" data-name="Paneer Butter Masala" data-price="420">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+            <section id="reviews">
+
+
+                <div class="wrapper p-top flex gap-3">
+                    <div class="image-container">
+                        <img src="images/review.png">
+                    </div>
+                    <div class="content">
+                        <h5>
+                            Our Reviews
+                        </h5>
+                        <h2>
+                            What Customers Say?
+                        </h2>
+                    </div>
+                    <div class="review-container">
+                        <div class="review-container">
+
+                            <div class="swiper mySwiper">
+
+                                <div class="swiper-wrapper">
+
+                                    <!-- Slide 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="profile">
+                                            <img src="images/soumalyo.png">
+                                        </div>
+
+                                        <h4>Soumalya Kundu</h4>
+
+                                        <div class="mt-half">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+
+                                        <p class="review-text">
+                                            Good portion size, great flavor, and very polite delivery service.
+                                        </p>
+                                    </div>
+
+
+                                    <!-- Slide 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="profile">
+                                            <img src="images/rajashree.jpg">
+                                        </div>
+
+                                        <h4>Rajashree Roy</h4>
+
+                                        <div class="mt-half">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+
+                                        <p class="review-text">
+                                            I really enjoyed the food — especially the biryani and naan combo.
+                                        </p>
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="swiper-slide">
+                                        <div class="profile">
+                                            <img src="images/sourav.jpeg">
+                                        </div>
+
+                                        <h4>Sourav Khan</h4>
+
+                                        <div class="mt-half">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+
+                                        <p class="review-text">
+                                            Very tasty food , every cuisine is top notch.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <!-- arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+            </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="main.js"></script>
+</body>
+
+</html>

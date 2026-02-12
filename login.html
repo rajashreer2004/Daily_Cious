@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" cntent="width=device-width,initial-scale=1.0">
+
+    <title>login and sign up form</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/bac55c5e5b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <video class="site-bg-video" autoplay muted loop playsinline>
+    <source src="video/video3.mp4" type="video/mp4">
+</video>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+        
+            <form>
+              <div class="input-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name">
+
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="email">
+
+              </div>
+              <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="password">
+              </div>
+              <p>Forgot Password? <a href="#">Click Here</a></p>
+              </div>
+              <div class="btn-field">
+                <button type="button" id="signupBTN">Sign Up</button>
+                 <button type="button" id="signinBTN" class="disable">Sign In</button>
+              </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let signupBTN = document.getElementById("signupBTN");
+        let signinBTN = document.getElementById("signinBTN");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+      signinBTN.onclick = function(){
+        nameField.style.maxHeight="0";
+        title.innerHTML = "Sign In";
+        signupBTN.classList.add("disable");
+        signinBTN.classList.remove("disable");
+
+      }
+      signupBTN.onclick = function(){
+        nameField.style.maxHeight="60px";
+        title.innerHTML = "Sign Up";
+        signupBTN.classList.remove("disable");
+        signinBTN.classList.add("disable");
+
+      }
+    </script>
+</body>
+
+</html>
